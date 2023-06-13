@@ -13,7 +13,7 @@ const App = () => {
 
   useEffect(() => {
     // Create a WebSocket connection to the server
-    const ws = new WebSocket('ws://192.168.1.8:3000');
+    const ws = new WebSocket('ws://192.168.1.7:3000');
 
     ws.onopen = () => {
       console.log('WebSocket connected');
@@ -47,7 +47,7 @@ const App = () => {
       }
 
       try {
-        const response = await fetch('http://192.168.1.8:3000/formats', {
+        const response = await fetch('http://192.168.1.7:3000/formats', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -98,7 +98,7 @@ const App = () => {
 
   const downloadVideo = async (format) => {
     try {
-      const response = await fetch('http://192.168.1.8:3000/download', {
+      const response = await fetch('http://192.168.1.7:3000/download', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -141,7 +141,7 @@ const App = () => {
 
   return (
     <View style={styles.container}>
-      <Image style={styles.logo} source={require("C:\\Users\\USER\\Desktop\\YoutubeDownloader\\YoutubeDownloader\\assets\\logo.jpg")} />
+      <Image style={styles.logo} source={require("D:\\Users\\USER\\Documents\\GitHub\\YoutubeApp\\assets\\logo.jpg")} />
       <Text style={styles.label1}>YouTube</Text>
       <Text style={styles.label2}>Downloader</Text>
       <Text style={styles.Child}>With This App, You Can Download Every Video From Youtube Just By Using A Link</Text>

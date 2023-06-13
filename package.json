@@ -14,7 +14,7 @@
     "axios": "^1.4.0",
     "child-process-promise": "^2.2.1",
     "cors": "^2.8.5",
-    "expo": "^48.0.19",
+    "expo": "^46.0.21",
     "expo-av": "^13.2.1",
     "expo-camera": "^13.2.1",
     "expo-clipboard": "~4.1.2",
